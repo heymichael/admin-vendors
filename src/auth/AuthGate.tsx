@@ -113,7 +113,6 @@ export function AuthGate({ children }: AuthGateProps) {
           photoURL: user?.photoURL ?? undefined,
           displayName: runtimeConfig.bypassAuth ? 'Dev User' : displayName,
           accessibleApps,
-          accessibleAdminApps: getAccessibleAdminApps(roles),
           signOut: signOutCurrentUser,
           getIdToken: async () => user?.getIdToken() ?? '',
         }}
