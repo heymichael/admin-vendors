@@ -63,16 +63,6 @@ export function App() {
       searchValue: (u) => u.email,
     },
     {
-      key: 'name',
-      header: 'Name',
-      render: (u) =>
-        [u.firstName, u.lastName].filter(Boolean).join(' ') || (
-          <span className="text-muted-foreground">—</span>
-        ),
-      sortValue: (u) => [u.firstName, u.lastName].filter(Boolean).join(' ').toLowerCase(),
-      searchValue: (u) => [u.firstName, u.lastName].filter(Boolean).join(' '),
-    },
-    {
       key: 'departments',
       header: 'Departments',
       searchValue: (u) => u.roles.includes('finance_admin') ? 'All' : u.allowedDepartments.join(' '),
