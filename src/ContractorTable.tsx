@@ -5,7 +5,7 @@ import {
   TagBadge,
 } from '@haderach/shared-ui'
 import { Search, X, ArrowUp, ArrowDown, ArrowUpDown, Loader2 } from 'lucide-react'
-import { useAuthUser } from './auth/AuthUserContext'
+import { useAuthUser } from '@haderach/shared-ui'
 import { fetchVendors, setIsContractor } from './api'
 import type { Vendor } from './api'
 import { ContractorAccessModal } from './ContractorAccessModal'
