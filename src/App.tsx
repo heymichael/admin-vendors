@@ -6,7 +6,7 @@ import {
   TagBadge,
 } from '@haderach/shared-ui'
 import type { UserTableColumn } from '@haderach/shared-ui'
-import { useAuthUser } from './auth/AuthUserContext'
+import { useAuthUser } from '@haderach/shared-ui'
 import { UserAccessModal } from './UserAccessModal'
 import { ContractorTable } from './ContractorTable'
 import { fetchUsers, fetchVendors } from './api'
